@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lawrence Terpin — Développeur web & Ingénieur DevOps</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --ink: #e6edf3;
+    --muted: #8b949e;
+    --rule: #21262d;
+    --accent: #58a6ff;
+    --accent-2: #3fb950;
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 64px 24px 40px;
+    text-align: left;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .masthead .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-2);
+    margin-bottom: 10px;
+  }
+
+  .masthead .eyebrow::before { content: "$ "; color: var(--muted); }
+
+  .masthead h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  .masthead .tagline {
+    color: var(--muted);
+    margin-top: 12px;
+    font-size: 1.1rem;
+    max-width: 560px;
+  }
+
+  .stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .stack span {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--accent);
+    background: rgba(88,166,255,0.1);
+    border: 1px solid rgba(88,166,255,0.25);
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  h2 {
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h2::before { content: "// "; color: var(--muted); }
+
+  p { font-size: 1.02rem; margin: 0 0 12px; color: var(--ink); }
+
+  .placeholder {
+    background: rgba(255,166,87,0.1);
+    border: 1px dashed #c9a36a;
+    padding: 2px 6px;
+    color: #e3a55b;
+    font-style: normal;
+    font-family: var(--mono);
+    font-size: 0.85em;
+  }
+
+  .contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-list li {
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 14px;
+  }
+
+  .contact-list li:first-child { border-top: none; }
+
+  .contact-list .label {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--muted);
+    min-width: 90px;
+    padding-top: 2px;
+  }
+
+  .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-list li {
+    padding: 14px 16px;
+    background: var(--bg-soft);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .project-list .name {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .project-list .meta {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">whoami</div>
+  <h1>Lawrence Terpin</h1>
+  <p class="tagline">Développeur web depuis 10 ans, ingénieur DevOps, freelance depuis 2020.</p>
+  <div class="stack">
+    <span>Développement web</span>
+    <span>DevOps</span>
+    <span>CI/CD</span>
+    <span>Applications mobiles</span>
+    <span>Freelance</span>
+  </div>
+</header>
+
+<main>
+
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Développeur web depuis 10 ans et ingénieur DevOps, je suis freelance depuis 2020. Je conçois, développe et déploie des applications web et mobiles, en gérant aussi bien le code que l'infrastructure et la mise en production.</p>
+    <p>Les applications présentées ci-dessous sont conçues, développées et publiées par mes soins, de la conception au déploiement sur les stores.</p>
+  </section>
+
+  <section id="projets">
+    <h2>Projets & applications</h2>
+    <ul class="project-list">
+      <li>
+        <div class="name">Vrac Vin</div>
+        <p style="margin:6px 0 0;"><span class="placeholder">Plateforme de ventes et achat de vins en vrac</span></p>
+        <div class="meta"><span class="placeholder">https://play.google.com/store/apps/details?id=com.vrac_vin.app&hl=fr&pli=1</span></div>
+      </li>
+      <li>
+        <div class="name">Hyères Agenda</div>
+        <p style="margin:6px 0 0;"><span class="placeholder">Application officielle d'agenda de la ville de Hyères les Palmiers</span></p>
+        <div class="meta"><span class="placeholder">https://play.google.com/store/apps/details?id=com.agenda_hyeres.app&hl=fr</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Coordonnées</h2>
+    <ul class="contact-list">
+      <li><span class="label">E-mail</span><span class="placeholder">lawrence.terpin.pro@gmail.com</span></li>
+      <li><span class="label">Téléphone</span><span class="placeholder">0676066724</span></li>
+      <li><span class="label">Adresse</span><span class="placeholder">14 Avenue des Apollons, 34170 Castelnau Le Lez</span></li>
+    </ul>
+  </section>
+
+  <section id="confidentialite">
+    <h2>Politique de confidentialité</h2>
+    <p>Dernière mise à jour : <span class="placeholder">30/06/2026</span></p>
+    <p>Cette politique de confidentialité s'applique aux applications mobiles éditées par <span class="placeholder">[VOTRE NOM]</span> (Vrac Vin, Hyères Agenda). Elle décrit quelles données sont collectées, dans quel but, et comment elles sont traitées.</p>
+    <p><strong>Données collectées</strong> — Selon les fonctionnalités de l'application, nous pouvons collecter : des données techniques liées à l'appareil (modèle, système d'exploitation, identifiant publicitaire) ; des données d'usage anonymisées à des fins statistiques (pages consultées, fonctionnalités utilisées) ; et, le cas échéant, des données fournies volontairement par l'utilisateur (adresse e-mail pour un contact ou une inscription). Aucune donnée bancaire n'est collectée ou stockée par l'application.</p>
+    <p><strong>Utilisation des données</strong> — Les données sont utilisées exclusivement pour assurer le fonctionnement de l'application, l'améliorer, et, le cas échéant, communiquer avec l'utilisateur. Elles ne sont ni vendues, ni partagées avec des tiers à des fins commerciales.</p>
+    <p><strong>Services tiers</strong> — L'application peut faire appel à des services tiers (hébergement, statistiques d'usage type Google Analytics/Firebase) soumis à leurs propres politiques de confidentialité.</p>
+    <p><strong>Conservation et suppression</strong> — Les données sont conservées le temps nécessaire aux finalités décrites ci-dessus. Tout utilisateur peut demander la suppression de ses données en nous contactant à l'adresse indiquée dans la section Coordonnées.</p>
+    <p><strong>Droits de l'utilisateur</strong> — Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles, exerçable par e-mail.</p>
+  </section>
+
+</main>
+
+<footer>
+  © <span class="placeholder">2026</span> Lawrence Terpin
+</footer>
+
+</body>
+</html>
