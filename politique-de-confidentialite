@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Lawrence Terpin</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-soft: #161b22;
+    --ink: #e6edf3;
+    --muted: #8b949e;
+    --rule: #21262d;
+    --accent: #58a6ff;
+    --accent-2: #3fb950;
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 64px 24px 40px;
+    text-align: left;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .masthead .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent-2);
+    margin-bottom: 10px;
+  }
+
+  .masthead .eyebrow::before { content: "$ "; color: var(--muted); }
+
+  .masthead h1 {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    margin: 0;
+    letter-spacing: -0.02em;
+  }
+
+  .masthead .tagline {
+    color: var(--muted);
+    margin-top: 12px;
+    font-size: 1.05rem;
+    max-width: 560px;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+  }
+
+  .app-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 24px;
+  }
+
+  .app-nav a {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    color: var(--accent);
+    background: rgba(88,166,255,0.1);
+    border: 1px solid rgba(88,166,255,0.25);
+    border-radius: 4px;
+    padding: 4px 10px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  section:last-of-type {
+    border-bottom: none;
+  }
+
+  .app-block {
+    background: var(--bg-soft);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h2::before { content: "// "; color: var(--muted); }
+
+  h3 {
+    font-size: 1.3rem;
+    margin: 0 0 6px;
+    color: var(--ink);
+  }
+
+  h3 .pkg {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 400;
+    margin-top: 4px;
+  }
+
+  h4 {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-2);
+    margin: 20px 0 8px;
+  }
+
+  p { font-size: 1.02rem; margin: 0 0 12px; color: var(--ink); }
+
+  .fact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fact-list li {
+    padding: 10px 0;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 14px;
+  }
+
+  .fact-list li:first-child { border-top: none; }
+
+  .fact-list .label {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--muted);
+    min-width: 130px;
+    padding-top: 2px;
+  }
+
+  .highlight-box {
+    background: rgba(63,185,80,0.08);
+    border: 1px solid rgba(63,185,80,0.25);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 10px 0 14px;
+  }
+
+  .caution-box {
+    background: rgba(255,166,87,0.08);
+    border: 1px solid rgba(201,163,106,0.3);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin: 10px 0 14px;
+  }
+
+  .highlight-box p, .caution-box p { margin: 0; }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow">privacy-policy --scope=all-apps</div>
+  <h1>Politique de confidentialité</h1>
+  <p class="tagline">Cette politique de confidentialité s'applique à l'ensemble des applications mobiles éditées par Lawrence Terpin, listées ci-dessous.</p>
+  <div class="app-nav">
+    <a href="#hyeres-agenda">Hyères Agenda</a>
+    <a href="#vrac-vin">Vrac Vin</a>
+  </div>
+  <a class="back-link" href="index.html">&larr; Retour au portfolio</a>
+</header>
+
+<main>
+
+  <section id="intro">
+    <h2>Portée de cette politique</h2>
+    <p>Chaque application listée ci-dessous dispose de sa propre section décrivant précisément quelles données sont collectées, dans quel but, et comment elles sont traitées. En l'absence de précision contraire dans la section d'une application, aucune donnée à caractère personnel n'est collectée par celle-ci.</p>
+  </section>
+
+  <section id="hyeres-agenda">
+    <h2>Application</h2>
+    <div class="app-block">
+      <h3>Hyères Agenda
+        <span class="pkg">Android — com.agenda_hyeres.app</span>
+      </h3>
+      <p>Application officielle de la ville d'Hyères permettant de consulter les événements culturels, sportifs et associatifs de la commune (recherche d'événements, favoris, rappels, carte des événements à proximité).</p>
+
+      <h4>Données collectées</h4>
+      <div class="highlight-box">
+        <p><strong>Hyères Agenda ne collecte, n'enregistre ni ne transmet aucune donnée à caractère personnel à un serveur distant.</strong></p>
+      </div>
+      <p>Les favoris, rappels et paramètres de recherche créés dans l'application sont enregistrés uniquement en local, sur l'appareil de l'utilisateur, et ne sont accessibles qu'à lui seul.</p>
+
+      <h4>Services tiers</h4>
+      <p>Aucun outil d'analyse d'audience, de suivi publicitaire ou de reporting tiers (type Firebase) n'est intégré à l'application.</p>
+
+      <h4>Contact</h4>
+      <p><a href="mailto:webreferenceur.fr@gmail.com">webreferenceur.fr@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section id="vrac-vin">
+    <h2>Application</h2>
+    <div class="app-block">
+      <h3>Vrac Vin
+        <span class="pkg">Android — com.vrac_vin.app · iOS</span>
+      </h3>
+      <p>Plateforme de dépôt et de recherche d'annonces de vente de vin en vrac, avec mise en relation entre acheteurs et vendeurs.</p>
+
+      <div class="caution-box">
+        <p><strong>Section à vérifier avant publication</strong> — ce qui suit reflète les informations publiques déclarées sur les fiches stores (Google Play « Sécurité des données », App Store). Merci de la corriger si elle ne reflète pas exactement le fonctionnement réel de l'app.</p>
+      </div>
+
+      <h4>Données collectées</h4>
+      <p>Pour utiliser certaines fonctionnalités (connexion à un compte, dépôt d'une annonce payante), Vrac Vin peut collecter :</p>
+      <ul>
+        <li>des données de compte (email, coordonnées de connexion) ;</li>
+        <li>des données de localisation, utilisées pour la recherche ou l'affichage d'annonces ;</li>
+        <li>pour les annonces déposées avec l'option payante, les coordonnées personnelles renseignées par l'utilisateur (affichées publiquement sur la fiche d'annonce afin d'être contacté par un acheteur potentiel).</li>
+      </ul>
+
+      <h4>Partage des données</h4>
+      <p>Aucune donnée n'est partagée avec des tiers à des fins commerciales. Les coordonnées associées à une annonce payante sont affichées publiquement sur la fiche d'annonce, à la demande de l'utilisateur, dans le but d'être contacté par d'autres utilisateurs de la plateforme.</p>
+
+      <h4>Achats intégrés</h4>
+      <p>L'application propose une option payante pour la publication immédiate d'une annonce avec coordonnées visibles. Les paiements sont traités via les systèmes d'achat intégrés d'Android/iOS et ne sont pas gérés directement par l'application.</p>
+
+      <h4>Contact</h4>
+      <p><a href="mailto:webreferenceur.fr@gmail.com">webreferenceur.fr@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section id="droits">
+    <h2>Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression de vos données personnelles. Vous pouvez exercer ces droits en nous contactant à l'adresse indiquée dans la section de l'application concernée ci-dessus.</p>
+  </section>
+
+  <section id="maj">
+    <h2>Mise à jour de cette politique</h2>
+    <p>Cette politique de confidentialité peut être modifiée à tout moment, notamment pour refléter l'ajout d'une nouvelle application ou une évolution des fonctionnalités existantes. Toute modification sera publiée sur cette page.</p>
+    <p style="color:var(--muted); font-family:var(--mono); font-size:0.85rem;">Dernière mise à jour : 09/09/2026</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Lawrence Terpin
+</footer>
+
+</body>
+</html>
